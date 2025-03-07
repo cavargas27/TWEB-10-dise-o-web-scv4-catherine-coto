@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UCENFOTEC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reto3.css">
+    <!--carga del favicon-->
+    <link href="img/logoindex.png" rel="icon">
+    <!--Cargar librería iconográfica-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  </head>
+  <body>
+    <div>
+        <button class="btn-volver" onclick="window.location.href='index.html'">
+            <i class="uil uil-arrow-left"></i> Volver
+        </button>
+    </div>
+
+    <div class="container">
+        <h1 class="title">Explora Nuestra Universidad</h1>
+        <p>Descubre los distintos servicios que ofrecemos para tu desarrollo académico.</p>
+
+        <div class="row row-cols-1 row-cols-md-2 g-4"> <!-- Usamos las clases de Bootstrap para hacer las columnas responsivas -->
+            <div class="col">
+                <div class="column">
+                    <h3>Admisión</h3>
+                    <p>Consulta los requisitos y procesos para ingresar a Cenfotec.</p>
+                    <button onclick="openLink('https://admisiones.ucenfotec.ac.cr/Login')">Sitio Web</button>
+                    <button class="info-btn" onclick="toggleInfo('info1')">Más información</button>
+                    <p class="extra-info" id="info1">Visita la página de admisión para conocer más sobre los requisitos.</p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="column">
+                    <h3>Carreras</h3>
+                    <p>Descubre la gran variedad de carreras que ofrece Cenfotec.</p>
+                    <button onclick="openLink('https://ucenfotec.ac.cr/carreras/')">Sitio Web</button>
+                    <button class="info-btn" onclick="toggleInfo('info2')">Más información</button>
+                    <p class="extra-info" id="info2">Explora todas las opciones académicas que ofrece Cenfotec.</p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="column">
+                    <h3>Bienestar Estudiantil</h3>
+                    <p>Conoce los servicios de apoyo para estudiantes.</p>
+                    <button onclick="openLink('https://ucenfotec.ac.cr/bienestar-estudiantil/')">Sitio Web</button>
+                    <button class="info-btn" onclick="toggleInfo('info3')">Más información</button>
+                    <p class="extra-info" id="info3">Programas y beneficios diseñados para mejorar tu experiencia estudiantil.</p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="column">
+                    <h3>Biblioteca</h3>
+                    <p>Accede a recursos académicos y material de estudio.</p>
+                    <button onclick="openLink('https://ucenfotec.ac.cr/biblioteca/')">Sitio Web</button>
+                    <button class="info-btn" onclick="toggleInfo('info4')">Más información</button>
+                    <p class="extra-info" id="info4">Encuentra libros, artículos y más en nuestra biblioteca digital.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/reto3.js"></script>
+  </body>
+</html>

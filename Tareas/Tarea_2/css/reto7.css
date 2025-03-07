@@ -1,0 +1,88 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+
+.photo-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.photo-item {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    text-align: center; 
+}
+
+
+.photo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+.ih-item.square.effect1 .img:before {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.ih-item.square.effect1:hover .img {
+    transform: scale(1.1);
+}
+
+.ih-item.square.effect1 .img:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease;
+}
+
+.ih-item.square.effect1:hover .img:before {
+    opacity: 0;
+}
+
+
+.photo-title {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.btn-volver{
+    position: fixed; 
+    top: 10px; 
+    right: 25px; 
+    padding: 1px 14px;
+    background-color: #212529;
+    color: #E9ECEF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-volver:hover{
+    background-color: #343A40;
+}

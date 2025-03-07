@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url('../img/banner-r8.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    color: white; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left; 
+    padding-left: 20px; 
+}
+
+.banner h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.btn-custom {
+    border: 2px solid white;
+    color: white;
+    padding: 8px 20px;
+    background: transparent;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: background 0.3s;
+    display: inline-flex; 
+    align-items: center;  
+    justify-content: center; 
+    line-height: 1; 
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.btn-custom i {
+    margin-left: 10px; 
+    font-size: 1.5rem; 
+}
+
+.btn-custom:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.btn-group {
+    display: flex;
+    justify-content: flex-start; 
+}
+
+.btn-volver {
+    position: fixed;
+    top: 10px;
+    right: 25px;
+    padding: 1px 14px;
+    background-color: #212529;
+    color: #E9ECEF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 9999;
+}
+
+.btn-volver:hover {
+    background-color: #343A40;
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+}
+
+
+.navbar {
+    background-color: transparent !important; 
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar .nav-link {
+    color: white !important; 
+}
+
+
+@media (max-width: 991px) { 
+    .navbar-collapse {
+        background-color: white !important; 
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .navbar .nav-link {
+        color: black !important; 
+        text-align: center;
+    }
+}
+
+/* menú hamburguesa */
+.menu-btn {
+    border: 2px solid black; 
+    border-radius: 5px;
+    padding: 1px 7px; 
+    transform: scale(1.0); 
+    background-color: #fff;
+    text-align: center;
+}
+
+
+.navbar-toggler {
+    margin-left: 130px; 
+}
+
+
+.menu-btn .navbar-toggler-icon {
+    filter: invert(0%); 
+    width: 30px; 
+    height: 30px; 
+}
+
+
+.navbar-collapse.collapse.show {
+    display: block !important; 
+}
