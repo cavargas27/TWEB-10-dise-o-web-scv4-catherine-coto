@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>FlyOver Las Vegas - Landing</title>
+    <link rel="icon" href="imagenes/favicon1.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<header class="banner">
+    <video autoplay muted loop id="landing-video">
+        <source src="videos/video1.mp4" type="video/mp4">
+    </video>
+    <nav class="navbar d-flex justify-content-between align-items-center px-3">
+      <img src="imagenes/logo1.png" class="logo">
+      <div class="position-relative">
+          <button class="menu-btn btn btn-outline-light">&#9776;</button>
+          <ul class="menu-list list-unstyled bg-dark text-white position-absolute end-0 mt-2 p-3 rounded d-none">
+              <li><a href="index.html" class="text-white text-decoration-none d-block py-1">Inicio</a></li>
+              <li><a href="ubicacion.html" class="text-white text-decoration-none d-block py-1">Ubicación</a></li>
+              <li><a href="#precios" class="text-white text-decoration-none d-block py-1">Precios y Paquetes</a></li>
+              <li><a href="#experiencia" class="text-white text-decoration-none d-block py-1">La experiencia</a></li>
+              <li><a href="#cactus" class="text-white text-decoration-none d-block py-1">El menú del Cactus Perdido</a></li>
+          </ul>
+      </div>
+  </nav>
+  
+    <div class="banner-text text-white">
+        <h1>DEJA QUE LA MARAVILLA TOME EL CONTROL
+            <br>Explora Las Vegas Desde el Cielo</h1>
+            <br>
+        <p class="pBanner">Vive la emoción como si estuvieras volando de verdad.</p>
+    </div>
+</header>
+
+<section class="section-dark text-white text-center py-5">
+    <h2 class="titulo">EXPLORA EL MUNDO COMO NUNCA ANTES</h2>
+    <br>
+    <p>Descubre la maravilla absoluta en Flyover. Nuestros viajes inmersivos te conectan<br>con nuestro planeta desde una perspectiva completamente nueva. Sobrevuela<br> lugares emblemáticos, sumérgete en historias auténticas y sumérgete en una experiencia inigualable.</p>
+    <p>Sigue tu sentido de la aventura hasta Flyover, ubicado justo al lado del Hard Rock Cafe en Las Vegas Boulevard. </p>
+</section>
+
+<section class="section-carousel py-5 bg-white" id="carrousel-section">
+    <div class="container">
+      <div id="flyoverCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+  
+          <div class="carousel-item active">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
+              <img src="imagenes/strip.jpg" class="img-carousel me-md-4 mb-3 mb-md-0">
+              <div class="text-center text-md-start">
+                <h2>Vuela sobre el Strip</h2>
+                <p>Explora Las Vegas como nunca antes.</p>
+                <a href="formCompra.html" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="carousel-item">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
+              <img src="imagenes/chicago.jpg" class="img-carousel me-md-4 mb-3 mb-md-0">
+              <div class="text-center text-md-start">
+                <h2>Cree en Chicago</h2>
+                <p>Sumérjase en la energía de la<br> gran ciudad de Chicago a bordo<br> de un viaje Flyover como<br> ningún otro.</p>
+                <a href="formCompra.html" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
+              <img src="imagenes/islandia.jpg" class="img-carousel me-md-4 mb-3 mb-md-0">
+              <div class="text-center text-md-start">
+                <h2>Islandia legendaria</h2>
+                <p>Vuela a la tierra del fuego y el<br> hielo. Déjate llevar y explora las<br> maravillas de la prístina Islandia.</p>
+                <a href="formCompra.html" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+           <div class="carousel-item">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
+              <img src="imagenes/canada.jpg" class="img-carousel me-md-4 mb-3 mb-md-0">
+              <div class="text-center text-md-start">
+                <h2>Windborne: El llamado de<br> las Montañas Rocosas<br> canadienses</h2>
+                <p>Conéctese con las vistas, los<br> sonidos y el espíritu alpino de<br> las Montañas Rocosas<br> canadienses.</p>
+                <a href="formCompra.html" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+          
+        <button class="carousel-control-next" type="button" data-bs-target="#catalogoCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+  
+        </div>
+  
+        <button class="carousel-control-prev" type="button" data-bs-target="#flyoverCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#flyoverCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+
+<section class="youtubeVideo py-5">
+    <h2></h2>
+    <p></p>
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/I0u-nISihvg?si=DGKmU0ITiKbpiUws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+
+<section class=" section5 text-center py-5">
+    <h2>Qué es FlyOver Las Vegas</h2>
+    <audio controls>
+        <source src="audios/audioFlyOver.mp3" type="audio/mpeg">
+        Tu navegador no soporta el audio.
+    </audio>
+</section>
+
+<section class="section9 d-flex flex-column flex-md-row align-items-center py-5">
+  <div class="col-12 col-md-6 mb-4 mb-md-0">
+      <img src="imagenes/img1.jpg" class="imagen-medio-circulo img-fluid" alt="Imagen descriptiva">
+  </div>
+  
+  <div class="col-12 col-md-6 ms-md-4">
+      <h2>DESPIERTA TUS SENTIDOS</h2>
+      <p>
+          Flyover cautiva todos tus sentidos para sumergirte en paisajes,<br>
+          historias y cultura. Aprovechando el poder de perspectivas únicas,<br>
+          las sensaciones de vuelo y una experiencia sensorial completa,<br>
+          sobrevolarás, rodearás y atravesarás los lugares más épicos del<br>
+          mundo.
+      </p>
+  </div>
+</section>
+
+<section class="section9 py-5">
+  <h2 class="text-center">Nuestra Ubicación</h2>
+  <p class="text-center">Encuéntranos en el corazón de Las Vegas</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.5551193661763!2d-115.1725549!3d36.10433140000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c5b14cfb53e1%3A0xad79eb90707a016c!2sFlyover!5e0!3m2!1ses!2scr!4v1743875444732!5m2!1ses!2scr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+
+<section class=" section9 text-center py-5">
+    <h2>Explora Desde Casa<h2>
+    <p>Conozca más sobre nosotros</p>
+    <video width="100%" controls>
+        <source src="videos/videoFlyOver.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+    </video>
+</section>
+
+<section class=" section9 text-center py-5">
+    <h2>Suscríbete</h2>
+    <p>Recibe promociones exclusivas y noticias</p>
+    <form class="w-75 mx-auto">
+        <input type="email" class="form-control mb-3" placeholder="Correo electrónico">
+        <button class="btn btn-success">Suscribirme</button>
+    </form>
+</section>
+
+<div class="container-botonws">
+    <a href="https://walink.co/b723c9" class="whatapp"
+        target="blank">
+        <img class="botonws" src="imagenes/logoWs.png" alt>
+    </a>
+</div>
+
+<button id="scrollTop" class="btn btn-dark scroll-btn">&#8679;</button>
+
+<footer class="bg-dark text-white py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="mb-3 mb-md-0">
+        <img src="imagenes/logo1.png" alt="FlyOver Logo" style="height: 50px;">
+      </div>
+  
+      <div class="text-center mb-3 mb-md-0">
+        <p class="mb-1">© 2025 FlyOver Las Vegas. Todos los derechos reservados.</p>
+        <a href="#" class="text-white text-decoration-underline">Políticas de Privacidad</a>
+      </div>
+  
+     <div>
+        <a href="https://facebook.com" target="_blank" class="text-white me-3 fs-4"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank" class="text-white me-3 fs-4"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/50612345678" target="_blank" class="text-white me-3 fs-4"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.youtube.com/results?search_query=flyover" target="_blank" class="text-white fs-4"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+  
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
