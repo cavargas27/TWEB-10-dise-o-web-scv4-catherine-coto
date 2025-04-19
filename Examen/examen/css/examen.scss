@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+$color-blanco: #ffffff;
+$color-negro: #000000;
+$color-dorado: #d4af37;
+$color-dorado-suave: #c19d60;
+$color-dorado-fuerte: #a67c00;
+$color-fondo-suave: #fff7e6;
+$color-texto-oscuro: #333;
+$color-hover-item: #e7f1ff;
+$color-producto: #f9f9f9;
+$color-footer: #333;
+
+header.navbar {
+  background-color: $color-blanco !important;
+
+  .btn-outline-primary {
+    color: $color-negro;
+    border-color: $color-blanco;
+
+    &:hover {
+      background-color: $color-dorado;
+      border-color: $color-dorado;
+      color: $color-negro;
+    }
+  }
+
+  .nav-link:hover,
+  .dropdown-item:hover {
+    color: $color-dorado !important;
+  }
+}
+
+.navbar-nav {
+  margin-left: auto;
+
+  .nav-link {
+    color: $color-negro !important;
+    font-size: 18px;
+  }
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,...");
+}
+
+.banner {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+}
+
+.rounded-circle {
+  transition: transform 0.4s ease-in-out;
+  object-fit: cover;
+
+  &:hover {
+    transform: scale(2.7);
+  }
+}
+
+#ofertas {
+  img {
+    filter: brightness(50%);
+    transition: filter 0.3s ease-in-out;
+
+    &:hover {
+      filter: brightness(100%);
+      transform: scale(1.05);
+    }
+  }
+}
+
+.custom-accordion {
+  border: 1px solid #d8b56e;
+  border-radius: 6px;
+  overflow: hidden;
+
+  &-button {
+    background-color: $color-dorado-suave;
+    color: white;
+    font-weight: bold;
+
+    &:not(.collapsed) {
+      background-color: $color-dorado-fuerte;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  &-body {
+    background-color: $color-fondo-suave;
+    color: $color-texto-oscuro;
+    border-top: 1px solid #d8b56e;
+  }
+}
+
+.dropdown-toggle {
+  &:focus,
+  &:active,
+  &.show {
+    background-color: transparent !important;
+    color: $color-negro;
+    box-shadow: none;
+    border-color: $color-negro;
+  }
+
+  &:hover {
+    background-color: $color-hover-item;
+  }
+}
+
+.parallax {
+  background-image: url("../img/banner1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+
+  &-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+  &-text {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+  }
+}
+
+.fw-semibold,
+.lead {
+  color: white;
+}
+
+#scrollTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  background-color: $color-dorado;
+  color: black;
+  z-index: 9999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease;
+
+  i {
+    font-size: 18px;
+    color: black;
+  }
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+}
