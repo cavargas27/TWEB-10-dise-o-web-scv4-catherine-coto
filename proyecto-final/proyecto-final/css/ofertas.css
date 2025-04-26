@@ -1,0 +1,74 @@
+body {
+  background-color: #f9f9f9;
+}
+
+.card img {
+  object-fit: cover;
+  height: 450px;
+  filter: brightness(70%);
+  transition: filter 0.3s ease;
+}
+
+.card img:hover {
+  filter: brightness(100%);
+}
+
+.filtro-categoria {
+  width: auto;
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  border: 2px solid #b68e4c;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+
+.filtro-categoria:hover {
+  border-color: #d4af37;
+  background-color: #f9f3e5;
+  color: #b68e4c;
+  cursor: pointer;
+}
+
+.filtro-categoria:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 8px #d4af37;
+  outline: none;
+}
+
+.form-label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.back-arrow {
+  position: fixed;
+  top: 50px;
+  right: 1500px;
+  font-size: 1.5rem;
+  color: #c7a008;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 10%;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  z-index: 1000;
+}
+
+.back-arrow:hover {
+  background-color: #c7a008;
+  color: white;
+}
+
+@media (max-width: 400px) {
+  .back-arrow {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 1.2rem;
+    padding: 4px 8px;
+  }
+}

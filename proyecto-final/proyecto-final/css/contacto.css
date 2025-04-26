@@ -1,0 +1,151 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #222;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .clip-section {
+    background: linear-gradient(to right, #333, #d4af37);
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  }
+  
+  .price-table {
+    padding: 40px 15px;
+    text-align: center;
+    border: 2px solid #d6d6d6;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .titulos {
+    font-size: 17px;
+    margin-top: 15px;
+    color: #222;
+  }
+  .numeros {
+    font-size: 60px;
+    font-weight: 300;
+    color: #333c4d;
+  }
+  
+  .price-table:hover {
+    background-color: #c7b884;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  .price-table:hover * {
+    color: #fff !important;
+  }
+  
+  
+  @media (max-width: 576px) {
+    .price-table {
+      background-color: #c7b884;
+      padding: 20px;
+    }
+  
+    .price-table:hover {
+      transform: none;
+      background-color: #00469b;
+      box-shadow: none;
+    }
+  
+    .numeros,
+    .titulos,
+    h3,
+    p {
+      color: white;
+    }
+  }
+
+
+.custom-title {
+    color: #333;
+    font-weight: bold;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.custom-form {
+    background: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0px 8px 24px rgba(0, 70, 155, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-input {
+    padding-left: 45px;
+    border-radius: 8px;
+    border: 2px solid #d4af37;
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+}
+
+.form-control-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #333;
+    font-size: 18px;
+}
+
+.custom-input:focus {
+    border-color: #d5bf76;
+    box-shadow: 0 0 8px rgba(0, 70, 155, 0.5);
+}
+
+.custom-btn {
+    background-color: #d4af37;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 50px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-btn:hover {
+    background-color: #b7a774;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 12px rgba(0, 70, 155, 0.4);
+}
+
+  
+
+  .back-arrow {
+    position: fixed;
+    top: 50px; 
+    right: 1500px; 
+    font-size: 1.5rem; 
+    color: #c7a008;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 10%;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .back-arrow:hover {
+    background-color: #c7a008;
+    color: white;
+  }
+    
+  @media (max-width: 400px) {
+    .back-arrow {
+     position: fixed;
+      top: 20px;
+      left: 20px; 
+      font-size: 1.2rem;
+      padding: 4px 8px;
+    }
+  }
